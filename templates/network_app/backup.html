@@ -1,0 +1,14 @@
+{% extends 'network_app/base.html' %}
+{% load staticfiles %}
+{% block title %}网络设备配置备份{% endblock %}
+{% block head_script %}
+    <script type="text/javascript" src="{% static 'js/backup.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <h4>请输入TFTP服务器地址:</h4>
+    <input type="text" id="tftp_host" name="tftp_host" value=""/>
+    <button style="margin: 20px;height: 30px;background-color: #00ff00;" type="button" id="backup_all" value=tftp_host>执行设备备份</button>
+<h4 style="margin: 20px;">备份执行情况:</h4>
+<div id="messagecontainer" style="margin: 10px;">
+</div>
+{% endblock %}
