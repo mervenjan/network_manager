@@ -1,0 +1,5 @@
+
+.idea/*
+__pycache__/*
+network_manager/__pycache__/*
+network_manager/settings.py
